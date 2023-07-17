@@ -1,9 +1,23 @@
 sap.ui.define(
 [
 	"sap/ui/core/mvc/Controller",
-	"sap/m/MessageToast"
+	"sap/m/MessageToast",
+	"sap/ui/core/library",
+	"sap/m/Dialog",
+	"sap/m/Button",
+	"sap/m/library",
+	"sap/m/Text"
 ],
-function(Controller, MessageToast) {
+function(Controller, MessageToast,  coreLibrary, Dialog, Button, mobileLibrary, Text) {
+			// shortcut for sap.m.ButtonType
+	var ButtonType = mobileLibrary.ButtonType;
+
+	// shortcut for sap.m.DialogType
+	var DialogType = mobileLibrary.DialogType;
+
+
+
+
 	return Controller.extend("mark.one.controller.App", {
 			ondownload: function() {
 				MessageToast.show("Downloading Guggilla Venkata Manohar Resume...");
@@ -25,6 +39,27 @@ function(Controller, MessageToast) {
 			// 	link.click();
 			// 	document.body.removeChild(link);
 			// }
+		},
+		
+
+		
+		onDefaultMessageDialogPress: function () {
+			if (!this.oDefaultMessageDialog) {
+				this.oDefaultMessageDialog = new Dialog({
+					type: DialogType.Message,
+					title: "Thank you",
+					content: new Text({ text: "Please contact me directly, phone number: 7780633848,7780632321" }),
+					beginButton: new Button({
+						type: ButtonType.Emphasized,
+						text: "OK",
+						press: function () {
+							this.oDefaultMessageDialog.close();
+						}.bind(this)
+					})
+				});
+			}
+
+			this.oDefaultMessageDialog.open();
 		}
 	});
 });
