@@ -1,0 +1,62 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" controllerName="mark.one.controller.App" height="1000px">
+	<Page title="Guggilla Venkata Manohar">
+		<headerContent>
+			<Button text="Home" icon="sap-icon://home" press="onhome"/>
+			<!--<Button text="Projects" icon="sap-icon://project-definition-triangle"/>-->
+			<Button text="Resume" icon="sap-icon://document-text" press="ondownload"/>
+		</headerContent>
+		<content>
+			<FlexBox alignItems="Center" justifyContent="Center" class="sapUiMediumMargin">
+				<items>
+					<FlexBox width="100%" id="__box1" alignItems="Center" justifyContent="SpaceAround">
+						<items>
+							<Image xmlns="sap.m" height="200px" src="https://i.ibb.co/KF83c6S/Passport-Photograph-1-removebg-preview.jpg"/>
+						</items>
+					</FlexBox>
+					<FlexBox width="100%" id="__box2" direction="Column" class="sapUiSmallMargin">
+						<items>
+							<FlexBox width="100%" id="__box3" direction="Column">
+								<items>
+									<Text xmlns="sap.m"
+										text="Hello,&#10; FRONTEND DEVELOPER &#10; &#10;Passionate Engineer proficient in explore and work in multiple domines like &#10; HTML CSS JAVASCRIPT SAPUI5 SAPWEBIDE MVC FIORI &#10; I am looking for a project that can challenge me and help me grow as a developer "/>
+									<FlexBox width="35%" id="__box4" justifyContent="SpaceBetween" class="sapUiSmallMargin">
+										<items>
+											<Button text="Hire Me" width="120px" id="__button5" icon="sap-icon://accept" type="Accept"/>
+											<Button text="Resume" width="120px" id="__button6" icon="sap-icon://attachment" press="ondownload"/>
+										</items>
+									</FlexBox>
+								</items>
+							</FlexBox>
+						</items>
+					</FlexBox>
+				</items>
+				<items/>
+			</FlexBox>
+			<FlexBox width="100%" id="__box5" backgroundDesign="Solid" height="20px" justifyContent="SpaceAround">
+				<items>
+					<Label text="Projects Work Porfolio" width="100%" id="__label0"/>
+				</items>
+			</FlexBox>
+			<Carousel activePage="__image1" showBusyIndicator="false" id="__carousel0" height="500px" class="sapUiMediumMarginTopBottom">
+				<pages>
+					<Image width="60%" id="__image1" src="https://i.ibb.co/rsyb4rh/image.png"/>
+					<Image width="60%" id="__image2" src="https://i.ibb.co/KN4j0MK/image.png"/>
+					<Image width="60%" id="__image3" src="https://i.ibb.co/QYpJBzN/image.png"/></pages>
+			</Carousel>
+			
+			<PDFViewer source="https://drive.google.com/file/d/1U780WdqgOnEMWsQYNYVg4nR__4xWqBO1/preview" title="Manohar Resume" height="600px">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</PDFViewer>
+		</content>
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button text="Contact Me" type="Accept"/>
+				<Button text="Endorse Me"/>
+				<ToolbarSpacer/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>
