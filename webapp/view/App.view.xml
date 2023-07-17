@@ -38,7 +38,7 @@
 					<Label text="Projects Work Porfolio" width="100%" id="__label0"/>
 				</items>
 			</FlexBox>
-			<Carousel activePage="__image1" showBusyIndicator="false" id="__carousel0" height="500px" class="sapUiMediumMarginTopBottom">
+			<Carousel activePage="__image1" showBusyIndicator="false" id="__carousel0" height="500px" >
 				<pages>
 					<Image width="60%" id="__image1" src="https://i.ibb.co/rsyb4rh/image.png"/>
 					<Image width="60%" id="__image2" src="https://i.ibb.co/KN4j0MK/image.png"/>
