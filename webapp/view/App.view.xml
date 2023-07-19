@@ -44,7 +44,7 @@
 					<Image width="60%" id="__image2" src="https://i.ibb.co/KN4j0MK/image.png"/>
 					<Image width="60%" id="__image3" src="https://i.ibb.co/QYpJBzN/image.png"/></pages>
 			</Carousel>
-			<PDFViewer source="https://drive.google.com/file/d/1U780WdqgOnEMWsQYNYVg4nR__4xWqBO1/preview" title="Manohar Resume" height="600px">
+			<PDFViewer source="https://drive.google.com/file/d/1iwVgZXODX-SKl44ZaLEQfpmCdXMcJAZG/preview" title="Manohar Resume" height="600px">
 				<layoutData>
 					<FlexItemData growFactor="1"/>
 				</layoutData>
